@@ -1,0 +1,87 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-height: 700px;
+}
+
+.form {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    width: 400px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+
+    background: linear-gradient(45deg, #00a8e8, #0056b3);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid #007bff;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 20px;
+    font-family: 'Quicksand', sans-serif;
+    outline: none;
+    font-weight: bold;
+}
+
+input::placeholder {
+    color: grey;
+}
+
+.btn {
+    background: linear-gradient(45deg, #00a8e8, #0056b3);
+    color: #fff;
+    border: none;
+
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-daftar {
+    background: linear-gradient(45deg, #00a8e8, #0056b3);
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 90%;
+    
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.btn-daftar:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}

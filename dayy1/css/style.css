@@ -1,0 +1,64 @@
+#section1{
+    font-size: 20px;;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    border: 2px solid red;
+}
+
+.satu {
+    background-color: violet;
+    position: static;
+    /* tidak bisa digeser */
+    top: 100px;
+}
+
+.dua {
+    background-color: saddlebrown;
+    position: relative;
+    top: 0;
+}
+
+.tiga{
+    background-color: aliceblue;
+    position: absolute;
+    top: 70px;
+    left: 70px;
+}
+
+.empat{
+    background-color: greenyellow;
+    /* position: fixed; */
+    right: 0;
+    bottom: 0;
+}
+
+.lima{
+    background-color: palegoldenrod;
+    /* position: sticky; */
+    top: 170px;
+    left: 400px;
+}
+.enam{
+    background-color: hotpink;
+}
+
+.flex{
+    display: flex;
+    /* flex-direction: column;  */
+    /* urutannya kebawah */
+    /* flex-direction: column-reverse; */
+    /* urutannya kebawah tapi dibalik */
+    flex-direction: column;
+}
+
+.flex-2{
+    display: flex;
+    /* defaultnya row */
+    justify-content: center;
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    align-items: center;
+}

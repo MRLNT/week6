@@ -1,0 +1,25 @@
+input{
+    background-color: grey;
+    border: none;
+    outline: none;
+}
+
+.margin-bottom-10{
+    margin-bottom: 10px;
+}
+
+.bg-color-aqua{
+    background-color: aqua;
+}
+
+.tombol-submit{
+    border-radius: 5px;
+    padding: 5px;
+    font-size: large;
+}
+
+.box-form {
+    border: 2px solid black;
+    padding: 8px;
+    width: fit-content;
+}

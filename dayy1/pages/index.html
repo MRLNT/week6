@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Judul</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<style>
+    /* 
+        internal styling
+        style yang masih ada dalam 1 doc html tapi diluar tag htmlnya
+
+        selektor
+        1. tag selector
+        2. class selector
+        3. id selector
+
+        external styling butuh file css nya sendiri yang di apnggil di docs html
+
+        urutan default<-eksternal<-internal<-inline
+    */
+    
+    /* id selector => # */
+    #section1{
+        color: rebeccapurple;
+    }
+
+    /* tag selector */
+    h1{
+        color: salmon;
+        font-size: 50px;
+    }
+
+    h1.section2{
+        font-size: 100px;
+    }
+
+    h1#section2{
+        color: aquamarine;
+    }
+
+    /* class selector => . */
+    .paragraph{
+        font-size: 20px;
+        text-align: justify;
+    }
+
+    .color-coral{
+        color: coral;
+    }
+    /* selector specificity */
+    /* bobot selector */
+    /* tag 0,0,1 */
+</style>
+<body>
+    <div id="section1" style="color: blue;">section pertama
+        <h1>ha hi hu he ho</h1>
+        <p>parah garp</p>
+    </div>
+    <div id="section2" class="color-coral">
+        <h1 class="section2" id="section2">nge tezs</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla recusandae vitae minima. Ab fuga, omnis at culpa non harum, voluptatum, consequatur eum optio iusto ut saepe deserunt! Natus, numquam sed!</p>
+    </div>
+    <div id="section3" class="paragraph">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sed animi saepe non debitis, harum modi laboriosam distinctio esse, autem possimus sequi suscipit, neque iusto in? Architecto magni in, quaerat velit, soluta cum harum fuga eius accusamus libero quos quae excepturi dolorem nisi earum facilis! Odio, debitis. Qui beatae fugit nemo quae itaque suscipit dolorum veniam aliquid nihil sequi a laudantium, pariatur vel repellendus. Modi ut, laborum numquam esse voluptates labore omnis quia, amet eum nisi doloribus reprehenderit non aspernatur a porro assumenda saepe adipisci natus? Aperiam consectetur voluptatibus quos nihil veniam eos debitis tempore recusandae unde eliglores, dolore tempora velit doloremque mollitia iste commodi perferendis, optio non! Laudantium consectetur debitis ex deleniti labore itaque minus molestiae eveniet, cupiditate nemo alias eius autem maiores dolorum rerum laborum quam quidem officiis totam. Eum praesentium ipsam molestias  Maxime sapiente unde ipsum ab excepturi nobis aliquid similique. Quidem numquam odit iste nulla ipsum facilis natus itaque velit aliquam amet quibusdam, magni exercitationem ut non voluptatem quas sed sit in laboriosam expedita. Recusandae autem, aspernatur in blanditiis quisquam vitae rerum totam qui sapiente consequatur. Accusamus ipsum, ad ex numquam recusandae cumque voluptas voluptatum doloremque voluptatem modi enim suscipit dolore similique illo soluta corrupti. Harum itaque, numquam minima blanditiis vel doloribus doloremque voluptatem quam consectetur sunt impedit eligendi libero molestiae quos culpa, ipsum, ea iusto repellat? Odio, molestias? Voluptate ratione dolores fugiat consectetur pariatur, autem eveniet laboriosam, molestiae, reprehenderit vel beatae dolorem a officiis commodi nesciunt maxime illum quas explicabo? Perspiciatis magni culpa itaque obcaecati illum adipisci ea officiis labore ullam maiores! Optio nobis tempore deleniti voluptatum ducimus impedit laborum similique unde repudiandae consectetur quasi assumenda vitae ea eius esse modi officia dolorem nostrum, dicta facilis. Nobis deserunt in beatae, repellendus laudantium odio natus dolorum rerum illo tempora ad? Tenetur, commodi maxime. Distinctio provident veniam voluptates quis debitis. Minima illum eveniet magni consequuntur itaque rem architecto, enim quaerat dolore quas obcaecati. Doloribus voluptates eveniet praesentium corrupti reprehenderit ea.</p>
+    </div>
+    
+    
+
+    <a href="./latihan.html">ke latihan form</a>
+    <a href="#section1">pindah ke 1</a>
+</body>
+</html>

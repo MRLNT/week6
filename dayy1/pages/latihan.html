@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORM</title>
+    <link rel="stylesheet" href="../css/styleformulir.css">
+</head>
+<body>
+    <form class="bg-color-aqua box-form">
+        <fieldset>
+            <legend>Formulir Data Diri</legend>
+            <h1>HTML FORM</h1>
+            <div id="sapaan" class="margin-bottom-10">
+                <label for="sapaan">Sapaan Anda : </label>
+                <select name="sapaan" id="sapaan">
+                    <option value="tidak ada">Tidak ada</option>
+                    <option value="bapak">Bapak</option>
+                    <option value="ibu">Ibu</option>
+                    <option value="saudara">Saudara</option>
+                </select>
+            </div>
+
+            <div id="nama" class="margin-bottom-10">
+                <label for="fname">Nama Depan : </label>
+                <input type="text" id="fname" name="fname"><br><br>
+                <label for="lname">Nama Belakang</label>
+                <input type="text" id="lname" name="lname"><br><br>
+            </div>
+
+            <div id="jenisKelamin" class="margin-bottom-10">
+                <p>Jenis Kelamin : 
+                    <input type="radio" id="cowok" name="jenisKelamin" value="laki-laki">
+                    <label for="cowok">LAKIK</label>
+                    <input type="radio" id="cewek" name="jenisKelamin" value="perempuan">
+                    <label for="cewek">Perempuan</label>
+                </p>
+            </div>
+
+            <div id="email" class="margin-bottom-10">
+                <label for="email">Email : </label>
+                <input type="text" id="email" name="email">
+            </div>
+
+            <div id="tglLahir" class="margin-bottom-10">
+                <label for="tgllahir">Tanggal Lahir:</label>
+                <input type="date" id="tgllahir" name="tgllahir">
+            </div>
+
+            <div id="alamat" class="margin-bottom-10">
+                <p><label for="alamat">Alamat:</label></p>
+                <textarea id="alamat" name="alamat" rows="4" cols="50"></textarea>
+            </div>
+
+            <br><input type="submit" value="Submit" class="tombol-submit">
+        </fieldset>
+    </form>
+    <a href="./index.html">kembali ke index</a>
+
+    <a href="./latihan-position.html">kembali ke halaman posisi</a>
+
+
+</body>
+</html>
