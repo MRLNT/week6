@@ -3,213 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style/style.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="./img/bookshelf.png">
         <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
         <title>Home</title>
+        <link rel="stylesheet" href="./style/style-home.css">
 
         <!-- Font Awesome for Icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
-        body {
-            overflow-x: hidden;
-        }
-
-        /* Styling Menu Sidebar */
-
-        #wrapper {
-            padding-left: 0;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
-
-        #wrapper.toggled {
-            padding-left: 250px;
-        }
-
-        #sidebar-wrapper {
-            z-index: 1000;
-            position: fixed;
-            left: 250px;
-            width: 0;
-            height: 100%;
-            margin-left: -250px;
-            overflow-y: auto;
-            background: #fff;
-            -webkit-transition: all 0.5s ease;
-            -moz-transition: all 0.5s ease;
-            -o-transition: all 0.5s ease;
-            transition: all 0.5s ease;
-        }
-
-        #wrapper.toggled #sidebar-wrapper {
-            width: 250px;
-        }
-
-        #page-content-wrapper {
-            width: 100%;
-            position: absolute;
-            padding: 15px;
-        }
-
-        #wrapper.toggled #page-content-wrapper {
-            position: absolute;
-            margin-right: -250px;
-        }
-
-        /* Sidebar Styles */
-
-        .sidebar-nav {
-            position: absolute;
-            top: 0;
-            width: 250px;
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-
-        .sidebar-nav li {
-            text-indent: 20px;
-            line-height: 40px;
-        }
-
-        .sidebar-nav li a {
-            display: block;
-            text-decoration: none;
-            color: #999999;
-        }
-
-        .sidebar-nav li a:hover {
-            text-decoration: none;
-            color: #fff;
-            background: rgba(255,255,255,0.2);
-        }
-
-        .sidebar-nav li a:active,
-        .sidebar-nav li a:focus {
-            text-decoration: none;
-        }
-
-        .sidebar-nav > .sidebar-brand {
-            height: 65px;
-            font-size: 18px;
-            line-height: 60px;
-        }
-
-        .sidebar-nav > .sidebar-brand a {
-            color: #000;
-        }
-
-        .sidebar-nav > .sidebar-brand a:hover {
-            color: #999999;
-            background: none;
-        }
-
-        @media(min-width:768px) {
-            #wrapper {
-                padding-left: 250px;
-            }
-
-            #wrapper.toggled {
-                padding-left: 0;
-            }
-
-            #sidebar-wrapper {
-                width: 250px;
-            }
-
-            #wrapper.toggled #sidebar-wrapper {
-                width: 0;
-            }
-
-            #page-content-wrapper {
-                padding: 20px;
-                position: relative;
-            }
-
-            #wrapper.toggled #page-content-wrapper {
-                position: relative;
-                margin-right: 0;
-            }
-
-            .form {
-                width: 40vb;
-                margin: 0% 150px;
-            }
-
-            .logo-library {
-                margin-left: 10%;
-            }
-
-            .form-input{
-                width: 150%;
-            }
-        }
-
-
-        .form{
-            position: relative;
-        }
-
-        .form .fa-search{
-            position: absolute;
-            top:20px;
-            left: 20px;
-            color: #9ca3af;
-        }
-
-        .form span{
-            position: absolute;
-            right: 17px;
-            top: 13px;
-            padding: 2px;
-        }
-
-        .form-input{
-            height: 55px;
-            text-indent: 33px;
-            border-radius: 30px;
-        }
-
-        .form-input:focus{
-            box-shadow: none;
-            border:none;
-        }
-
-        .card {
-            width: 320px;
-            height: 340px;
-        }
-
-        /* CAROUSEL */
-        .carousel {
-        margin-bottom: 4rem;
-        }
-
-        .carousel-caption {
-        bottom: 3rem;
-        z-index: 10;
-        }
-
-        .carousel-item {
-        height: 32rem;
-        }
-
-        .logo-library h4 {
-            padding-top: 17px;
-        }
-
-        #profil-picture {
-            height: 20vh;
-            width: 20vh;
-            margin-left: 10vh;
-            margin-top: 10vh;
-            justify-content: center;
-            align-items: center;
-        }
-        
     </style>
   </head>
   <body>
@@ -271,12 +74,13 @@
                                             <a class="dropdown-item" href="#">Trending</a>
                                         </div>
                                     </li>
-                                    
                                     <li class="nav-item">
                                         <div class="form">
                                             <i class="fa fa-search"></i>
                                             <input type="text" class="form-control form-input" placeholder="Search book">
                                         </div>
+                                    </li>
+                                    <li class="nav-item px-5">
                                     </li>
                                     <li class="nav-item logo-library d-flex flex-row">
                                         <img src="./img/bookshelf.png" alt="logo">
@@ -341,7 +145,8 @@
         <!-- /#page-content-wrapper -->
     </div>
     <!-- /#wrapper -->
-    <div class="container">
+    <!-- flex -->
+    <div class="container card-home ">
         <h4>List Book</h4><br>
         <div class="row">
             <div class="col-4 p-3">
