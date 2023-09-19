@@ -1,8 +1,8 @@
-const name = localStorage.getItem("name");
+const fullname = localStorage.getItem("fullname");
 // console.log(name);
 
 const sidebarName = document.getElementById('sidebar-name')
-sidebarName.innerHTML = name;
+sidebarName.innerHTML = fullname;
 
 const btnLogout = document.getElementById('btn-logout');
 

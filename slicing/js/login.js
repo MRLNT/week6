@@ -4,11 +4,10 @@ const btnLogin = document.getElementById("btn-login")
 
 btnLogin.addEventListener("click", (e) => {
     e.preventDefault();
-
-    if (email.value === "marcel@gmail.com") {
-        if (password.value === "123") {
+    if (email.value === localStorage.getItem("email")) {
+        if (password.value === localStorage.getItem("password")) {
             alert("success login")
-            localStorage.setItem("name", "marcel")
+
             window.location.href = './home.html'
         } else {
             alert("wrong password");
