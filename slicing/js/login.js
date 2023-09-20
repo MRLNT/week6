@@ -4,15 +4,22 @@ const btnLogin = document.getElementById("btn-login")
 
 btnLogin.addEventListener("click", (e) => {
     e.preventDefault();
-    if (email.value === localStorage.getItem("email")) {
-        if (password.value === localStorage.getItem("password")) {
-            alert("success login")
-
-            window.location.href = './home.html'
-        } else {
-            alert("wrong password");
-        }
+    if (email.value == "") {
+        alert("email tidak boleh kosong");
+    } else if (password.value == ""){
+        alert("password tidak boleh kosong");
     } else {
-        alert("email salah");
+        if (email.value === localStorage.getItem("email")) {
+            if (password.value === localStorage.getItem("password")) {
+                alert("success login")
+    
+                window.location.href = './home.html'
+            } else {
+                alert("wrong password");
+            }
+        } else {
+            alert("email salah");
+        }
     }
+    
 })
